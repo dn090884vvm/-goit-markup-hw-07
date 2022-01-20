@@ -690,16 +690,16 @@ address__destination-link:focus {
 .portfolio {
   background-color: var(--primary-white-color);
 }
-.portfolio-choose-filter {
+.portfolio__selector-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio-list-choose:not(:last-child) {
+.portfolio__selector-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-button-choose {
+.portfolio__selector-bttn {
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
@@ -720,8 +720,8 @@ address__destination-link:focus {
     box-shadow 250ms var(--cubic);
 }
 
-.portfolio-button-choose:hover,
-.portfolio-button-choose:focus {
+.portfolio__selector-bttn:hover,
+.portfolio__selector-bttn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -729,37 +729,35 @@ address__destination-link:focus {
   border-radius: 4px;
 }
 
-.portfolio-examples-link {
+.portfolio__link {
   display: block;
   transition: box-shadow 250ms var(--cubic);
 }
-.portfolio-examples-link:hover,
-.portfolio-examples-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio-categories {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
-.portfolio-categories-list {
+.portfolio__item {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.work-description {
+.portfolio__description {
   padding: 20px 24px;
   background-color: var(--primary-white-color);
   border: 1px solid #eeeeee;
 }
-.portfolio-examples-title {
-  margin-bottom: 4px;
-}
 
-.portfolio-examples-title {
+.portfolio__description-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -767,7 +765,7 @@ address__destination-link:focus {
 
   color: var(--primary-text-color);
 }
-.portfolio-examples-about {
+.portfolio__description-type {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
@@ -776,11 +774,11 @@ address__destination-link:focus {
   color: var(--secondary-text-color);
 }
 
-.portfolio-examples-wrap {
+.portfolio__info-wrap {
   position: relative;
   overflow: hidden;
 }
-.portfolio-examples-overlay {
+.portfolio__info-overlay {
   position: absolute;
   overflow: auto;
   top: 0;
@@ -799,8 +797,8 @@ address__destination-link:focus {
   transition: transform 250ms var(--cubic);
 }
 
-.portfolio-examples-link:hover .portfolio-examples-overlay,
-.portfolio-examples-link:focus .portfolio-examples-overlay {
+.portfolio__link:hover .portfolio__info-overlay,
+.portfolio__link:focus .portfolio__info-overlay {
   transform: translateY(0%);
   /* transition: transform 250ms; */
 }
