@@ -96,7 +96,7 @@ ol {
   justify-content: space-between;
 }
 
-.social-links {
+.social-list__links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ ol {
   height: 20px;
 }
 
-.section-title {
+.section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -338,7 +338,7 @@ ol {
   border-bottom: 1px solid #ececec;
 }
 
-.head-comtainer {
+.head-container {
   display: flex;
   align-items: center;
 }
@@ -542,12 +542,12 @@ ol {
   margin-top: 16px;
 }
 
-.team__social-links {
+.social-list__links--team {
   fill: #afb1b8;
   transition: fill 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
-.team__social-links:hover, .team__social-links:focus {
+.social-list__links--team:hover, .social-list__links--team:focus {
   fill: #ffffff;
   background-color: var(--accent-color);
 }
@@ -711,13 +711,13 @@ ol {
   margin-top: 20px;
 }
 
-.footer__social-links {
+.social-list__links--footer {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
   transition: background-color 250ms var(--cubic);
 }
 
-.footer__social-links:hover, .footer__social-links:focus {
+.social-list__links--footer:hover, .social-list__links--footer:focus {
   background-color: var(--accent-color);
 }
 
